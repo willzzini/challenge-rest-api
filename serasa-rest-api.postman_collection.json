@@ -1,0 +1,342 @@
+{
+	"id": "e57ef5b5-b239-c74a-8bae-9f0662d34032",
+	"name": "serasa-rest-api",
+	"description": "",
+	"order": [
+		"4fc25678-e3e2-9476-3077-a1f1bc8d9b4b",
+		"6da4c768-797f-032e-be48-02b94ac0459c",
+		"db97dbe0-7eb9-31a1-dda9-70ff56a2f9cb",
+		"154daba6-4158-8488-f9c9-748f705b2bb6",
+		"bcda0559-524d-6a8b-1c15-5b658d28baa9",
+		"a3828b72-29ad-f6a0-6afc-95dd61ebdad1",
+		"2863dee3-0174-1cf3-9cb4-9286d73ba7b9",
+		"2431631a-74ea-8b73-4220-9e012da59105",
+		"d4b9f4b9-c19b-c90f-1638-7fef71ed0eab",
+		"f0c92d17-0f2e-5cc5-6600-b8bdf3514aa7"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1519932619955,
+	"owner": "1703561",
+	"public": false,
+	"requests": [
+		{
+			"id": "154daba6-4158-8488-f9c9-748f705b2bb6",
+			"headers": "Accept: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}/customers",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1519968366866,
+			"name": "customers_list",
+			"description": "",
+			"collectionId": "e57ef5b5-b239-c74a-8bae-9f0662d34032",
+			"responses": []
+		},
+		{
+			"id": "2431631a-74ea-8b73-4220-9e012da59105",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}/customer/32498290800",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1519966127513,
+			"name": "customer<cpf>",
+			"description": "",
+			"collectionId": "e57ef5b5-b239-c74a-8bae-9f0662d34032",
+			"responses": [],
+			"rawModeData": "{\n\t\"name\": \"wilson\",\n\t\"debtor_value\": 15.99,\n\t\"store_id\": 1\n}"
+		},
+		{
+			"id": "2863dee3-0174-1cf3-9cb4-9286d73ba7b9",
+			"headers": "Accept: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}/customer/32498290801",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1519972544535,
+			"name": "customer<cpf>",
+			"description": "",
+			"collectionId": "e57ef5b5-b239-c74a-8bae-9f0662d34032",
+			"responses": []
+		},
+		{
+			"id": "4fc25678-e3e2-9476-3077-a1f1bc8d9b4b",
+			"headers": "Accept: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}/scores",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1519971920343,
+			"name": "score_list",
+			"description": "",
+			"collectionId": "e57ef5b5-b239-c74a-8bae-9f0662d34032",
+			"responses": []
+		},
+		{
+			"id": "6da4c768-797f-032e-be48-02b94ac0459c",
+			"headers": "Accept: application/json\nAuthorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiZXhwIjoxNTE5OTY4NDg5LCJuYmYiOjE1MTk5NjgxODksImlhdCI6MTUxOTk2ODE4OX0.Vls3yeH7ssOsTFHQJBCALRXihPjOGZqYekxrSpwxWoY\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiZXhwIjoxNTE5OTY4NDg5LCJuYmYiOjE1MTk5NjgxODksImlhdCI6MTUxOTk2ODE4OX0.Vls3yeH7ssOsTFHQJBCALRXihPjOGZqYekxrSpwxWoY",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}/score/medio",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1519973971110,
+			"name": "score<type_risk>",
+			"description": "",
+			"collectionId": "e57ef5b5-b239-c74a-8bae-9f0662d34032",
+			"responses": []
+		},
+		{
+			"id": "a3828b72-29ad-f6a0-6afc-95dd61ebdad1",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}/customer/32498290800",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1519972569851,
+			"name": "customer<cpf>",
+			"description": "",
+			"collectionId": "e57ef5b5-b239-c74a-8bae-9f0662d34032",
+			"responses": [],
+			"rawModeData": "{\n\t\"name\": \"joao\",\n\t\"debtor_value\": 15.99,\n\t\"customer_defaulter\": false,\n\t\"store_id\": 1\n}"
+		},
+		{
+			"id": "bcda0559-524d-6a8b-1c15-5b658d28baa9",
+			"headers": "Accept: application/json\nAuthorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiZXhwIjoxNTE5OTY4NDg5LCJuYmYiOjE1MTk5NjgxODksImlhdCI6MTUxOTk2ODE4OX0.Vls3yeH7ssOsTFHQJBCALRXihPjOGZqYekxrSpwxWoY\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiZXhwIjoxNTE5OTY4NDg5LCJuYmYiOjE1MTk5NjgxODksImlhdCI6MTUxOTk2ODE4OX0.Vls3yeH7ssOsTFHQJBCALRXihPjOGZqYekxrSpwxWoY",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}/customer/32498290800",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1519968370060,
+			"name": "customer<cpf>",
+			"description": "",
+			"collectionId": "e57ef5b5-b239-c74a-8bae-9f0662d34032",
+			"responses": []
+		},
+		{
+			"id": "d4b9f4b9-c19b-c90f-1638-7fef71ed0eab",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}/auth",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1519953505159,
+			"name": "auth_token",
+			"description": "",
+			"collectionId": "e57ef5b5-b239-c74a-8bae-9f0662d34032",
+			"responses": [],
+			"rawModeData": "{\n\t\n\t\"username\": \"wilson\",\n\t\"password\": \"1234\"\n}"
+		},
+		{
+			"id": "db97dbe0-7eb9-31a1-dda9-70ff56a2f9cb",
+			"headers": "Accept: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}/score/alto",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1519973985040,
+			"name": "score<type_risk>",
+			"description": "",
+			"collectionId": "e57ef5b5-b239-c74a-8bae-9f0662d34032",
+			"responses": []
+		},
+		{
+			"id": "f0c92d17-0f2e-5cc5-6600-b8bdf3514aa7",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}/register",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1519954220970,
+			"name": "register",
+			"description": "",
+			"collectionId": "e57ef5b5-b239-c74a-8bae-9f0662d34032",
+			"responses": [],
+			"rawModeData": "{\n\t\n\t\"username\": \"wilson\",\n\t\"password\": \"1234\"\n}"
+		}
+	]
+}
