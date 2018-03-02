@@ -50,3 +50,20 @@ A flask-driven restful API for information analysis
     http://127.0.0.1:5000/
     ```
     Or test creating data using Postman
+
+* #### Postaman Test
+    1. In postman you should create an admi user with the endpoint:
+        ```
+        http://127.0.0.1:5000/register
+        ```
+
+    2. then you will have to obtain a token so that it is possible to navigate the other endpoints:
+        ```
+        http://127.0.0.1:5000/auth
+	```
+
+    3. so that it is possible to access the endpoints it is necessary to pass in the Headers of postaman the JWT token space, see:
+        ```
+        JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiZXhwIjoxNTE5OTY4NDg5
+		LCJuYmYiOjE1MTk5NjgxODksImlhdCI6MTUxOTk2ODE4OX0.Vls3yeH7ssOsTFHQJBCALRXihPjOGZqYekxrSpwxWoY
+	```
