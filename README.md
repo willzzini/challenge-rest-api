@@ -47,7 +47,7 @@ A flask-driven restful API for information analysis
     ```
     You can now access the app on your local browser by using
     ```
-    http://127.0.0.1:5000/customer/number_cpf
+    http://127.0.0.1:5000/customers
     ```
     Or test creating data using Postman
 
