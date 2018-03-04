@@ -1,4 +1,4 @@
-#!/home/wil/serasa-rest-api/venv/bin/python
+#!/home/wil/Documentos/serasa-rest-api/venv/bin/python
 
 import sys
 import getopt
