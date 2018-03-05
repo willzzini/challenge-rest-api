@@ -35,7 +35,7 @@ A flask-driven restful API for information analysis
     ```
     Or test creating data using Postman
 
-* #### Postaman Test
+* #### Postman Test
     1. In postman you should create an admi user with the endpoint:
         ```
         http://127.0.0.1:4000/register
