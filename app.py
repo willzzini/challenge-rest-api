@@ -1,6 +1,8 @@
 from flask import Flask
 from flask_restful import Api
 from flask_jwt import JWT
+from flask_cors import CORS
+from flasgger import Swagger
 
 from security import authenticate, identity
 from resources.user import UserRegister
@@ -8,6 +10,7 @@ from resources.customer import Customer, CustomerList
 from resources.score import Score, ScoreList
 
 app = Flask(__name__)
+CORS(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = 'EiEiO'
@@ -18,6 +21,16 @@ api = Api(app)
 def create_tables():
     db.create_all()
 
+
+app.config['SWAGGER'] = {
+    "uiversion": 3,
+    "swagger_version": "3.0",
+    "title": "Serasa API",
+    "specs_route": "/serasa-api-docs/",
+    "description": "This is the version 1 serasa API",
+}
+
+Swagger(app)
 
 jwt = JWT(app, authenticate, identity)
 

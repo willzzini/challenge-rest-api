@@ -1,5 +1,6 @@
 from flask_restful import Resource, reqparse
 from flask_jwt import jwt_required
+from flasgger import swag_from
 from models.customer import CustomerModel
 
 
@@ -12,10 +13,10 @@ class Customer(Resource):
         help="This field cannot be left blank!"
     )
     parser.add_argument(
-        'store_id',
+        'score_id',
         type=int,
         required=True,
-        help="Every customer needs a store_id."
+        help="Every customer needs a score_id."
     )
     parser.add_argument(
         'name',
@@ -37,6 +38,7 @@ class Customer(Resource):
         return {'message': 'Customer not found'}, 404
 
     @jwt_required()
+    @swag_from("../docs/customers/customer_post.yml")
     def post(self, tax_id):
         if CustomerModel.find_by_taxid(tax_id):
             return {
@@ -49,7 +51,7 @@ class Customer(Resource):
         customer = CustomerModel(
             tax_id,
             data['debtor_value'],
-            data['store_id'], data['name'], data['customer_defaulter'])
+            data['score_id'], data['name'], data['customer_defaulter'])
 
         try:
             customer.save_to_db()
