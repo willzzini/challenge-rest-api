@@ -10,7 +10,9 @@ from resources.customer import Customer, CustomerList
 from resources.score import Score, ScoreList
 
 app = Flask(__name__)
-CORS(app)
+#cors = CORS(app)
+cors = CORS(app, resorces={r'/*': {"origins": '*'}})
+app.config['CORS_HEADERS'] = 'application/json'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = 'EiEiO'
