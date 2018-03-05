@@ -31,6 +31,7 @@ class Customer(Resource):
         help="Every customer needs a customer_defaulter."
     )
 
+    @swag_from("../docs/customers/customers_get.yml")
     def get(self, tax_id):
         customer = CustomerModel.find_by_taxid(tax_id)
         if customer:
@@ -62,6 +63,7 @@ class Customer(Resource):
         return customer.json(), 201
 
     @jwt_required()
+    @swag_from("../docs/customers/customers_delete.yml")
     def delete(self, tax_id):
         customer = CustomerModel.find_by_taxid(tax_id)
         if customer:
@@ -70,6 +72,7 @@ class Customer(Resource):
         return {'message': 'Customer deleted'}
 
     @jwt_required()
+    @swag_from("../docs/customers/customers_put.yml")
     def put(self, tax_id):
         data = Customer.parser.parse_args()
 
