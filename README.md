@@ -46,6 +46,8 @@ A flask-driven restful API for information analysis
         http://127.0.0.1:4000/auth
 	```
 
+    you can access the swagger documentation: http://127.0.0.1:4000/serasa-api-docs/#
+
     3. So that it is possible to access the endpoints it is necessary to pass in the Headers of postaman the JWT token space, see:
         ```
         JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiZXhwIjoxNTE5OTY4NDg5

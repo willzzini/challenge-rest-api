@@ -38,7 +38,7 @@ class Customer(Resource):
         return {'message': 'Customer not found'}, 404
 
     @jwt_required()
-    @swag_from("../docs/customers/customer_post.yml")
+    @swag_from("../docs/customers/customers_post.yml")
     def post(self, tax_id):
         if CustomerModel.find_by_taxid(tax_id):
             return {
