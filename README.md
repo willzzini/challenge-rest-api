@@ -11,8 +11,7 @@ A flask-driven restful API for information analysis
 
 
 ## Installation / Usage
-* If you wish to run your own build, first ensure you have python3 globally installed in your computer. If not, you can get python3 [here](https://www.python.org).
-* After this, ensure you have installed docker globally as well. If not, run this:
+* to run the project is very simple, enough installed docker globally as well. If not, run this:
     ```
         $ sudo apt update
 	$ sudo apt install docker.io
