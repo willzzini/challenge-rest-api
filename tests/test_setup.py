@@ -38,7 +38,7 @@ class TestSetup(unittest.TestCase):
 
     def test_01_login_localhost(self):
         user = self.setup_user_localhost()
-        forbidden_user_localhost = self.setup_forbidden_user_stag()
+        forbidden_user_localhost = self.setup_forbidden_user_localhost()
 
         self.assertEqual(200, user.status_code)
         self.assertEqual(403, forbidden_user_localhost.status_code)

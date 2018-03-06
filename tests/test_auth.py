@@ -15,7 +15,7 @@ with open(file_path) as variable_file:
 USER_INFO = data.get("register")
 
 
-class TestAdminEndpoint(unittest.TestCase):
+class TestAuthEndpoint(unittest.TestCase):
     def setUp(self):
         self.initial_setup = TestSetup()
 
