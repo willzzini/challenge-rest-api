@@ -27,9 +27,9 @@ def create_tables():
 app.config['SWAGGER'] = {
     "uiversion": 3,
     "swagger_version": "3.0",
-    "title": "Serasa API",
-    "specs_route": "/serasa-api-docs/",
-    "description": "This is the version 1 serasa API",
+    "title": "challenge API",
+    "specs_route": "/challenge-api-docs/",
+    "description": "This is the version 1 challenge API",
 }
 
 Swagger(app)

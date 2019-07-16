@@ -1,4 +1,4 @@
-# serasa-rest-api [![Build Status](https://travis-ci.org/gitgik/flask-rest-api.svg?branch=master)](https://travis-ci.org/gitgik/flask-rest-api)
+# challenge-rest-api [![Build Status](https://travis-ci.org/gitgik/flask-rest-api.svg?branch=master)](https://travis-ci.org/gitgik/flask-rest-api)
 A flask-driven restful API for information analysis
 
 
@@ -18,15 +18,15 @@ A flask-driven restful API for information analysis
     ```
 * Git clone this repo to your PC
     ```
-        $ git clone https://github.com/willzzini/serasa-rest-api.git
+        $ git clone https://github.com/willzzini/challenge-rest-api.git
     ````
 
 * #### Running It
     Cd into your the cloned repo as such, run the server using this one simple command:
 	
     ```
-    $ docker build -t serasa-api .
-    $ docker run -p 4000:80 serasa-api
+    $ docker build -t challenge-api .
+    $ docker run -p 4000:80 challenge-api
     ```
     You can now access the app on your local browser by using
     ```
@@ -45,7 +45,7 @@ A flask-driven restful API for information analysis
         http://127.0.0.1:4000/auth
 	```
 
-    you can access the swagger documentation: http://127.0.0.1:4000/serasa-api-docs/#
+    you can access the swagger documentation: http://127.0.0.1:4000/challenge-api-docs/#
 
     3. So that it is possible to access the endpoints it is necessary to pass in the Headers of postaman the JWT token space, see:
         ```

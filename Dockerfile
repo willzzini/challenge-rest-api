@@ -2,15 +2,15 @@ FROM python:3.5-jessie
 
 COPY app.py /
 
-RUN mkdir -p /serasa-rest-api
+RUN mkdir -p /challenge-rest-api
 
-WORKDIR /serasa-rest-api
+WORKDIR /challenge-rest-api
 
 ADD requirements.txt /tmp/requirements.txt
 
 RUN pip install -r /tmp/requirements.txt
 
-ADD . /serasa-rest-api
+ADD . /challenge-rest-api
 
 ADD app.py /
 
